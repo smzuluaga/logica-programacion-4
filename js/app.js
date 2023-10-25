@@ -15,7 +15,7 @@ Crear un programa en Javascript que realice lo siguiente:
 
 // SECCION TEMPERATURAS
 function convertirTemperatura() {
-    
+
     let inputFrom = document.getElementById("inputFrom");
     let dataFrom = document.getElementById("dataFrom");
     let showTemperatura1 = document.getElementById("showTemperatura1");
@@ -143,8 +143,11 @@ const input = document.getElementById("dataFromFiconacci");
 const output = document.getElementById("showFibonacci");
 
 function mostrarFibonacci() {
+    if (!Number(input.value)) {
+        output.innerHTML= "Ingrese un valor numérico"; 
+        return;
+    }
 
-    if (input.value === "") {output.innerHTML= "Ingrese un valor"; return}
     let times = input.value;
     let fibo = [0,1];
 
