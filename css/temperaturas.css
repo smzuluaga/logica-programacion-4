@@ -19,10 +19,12 @@ main {
 
 
 .convertidor-container {
+    background-color: rgba(55,55,55,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100vw;
 }
 
 .card {
