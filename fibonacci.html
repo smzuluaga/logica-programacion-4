@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor Temperaturas</title>
+    <link rel="Stylesheet" href="css/fibonacci.css">
+    <script defer src="js/app.js"></script>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="convertidor-container">
+            <div class="card" data-aos="zoom-in"  data-aos-duration="2500">
+
+                <a href="./index.html" class="backbutton" id="back-button"><i class='bx bx-arrow-back'></i></a>
+                
+                <h1>Calculadora de <br>Fibonacci</h1>
+                
+                <div class="card-conversiones">
+                    <label for="dataFromFiconacci">Ingrese la cantidad de números que desea conocer de la serie de fibonnaci</label>
+                    <input type="text" id="dataFromFiconacci" placeholder="Ingreseun número entero">
+                    <button onclick="mostrarFibonacci()">Mostrar</button>
+                    <button onclick="limpiarFibonacci()">Limpiar</button>
+                </div>
+                <p id="showFibonacci"> </p>
+
+                
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
+
+</body>
+</html>
